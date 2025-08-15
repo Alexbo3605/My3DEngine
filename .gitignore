@@ -416,3 +416,9 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+
+# My Git_Ignore Files
+build
+vcpkg_installed
+Binaries

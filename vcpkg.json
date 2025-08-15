@@ -1,0 +1,15 @@
+{
+  "name": "my3dengine",
+  "version-string": "0.1.0",
+  "builtin-baseline": "b4c89f87d2b77029201be39b464ce71b12cc8950",
+  "dependencies": [
+	 "sfml"
+  ],
+  "overrides": [
+    {
+      "name": "sfml",
+      "version-string": "2.6.1"
+    }
+  ]
+
+}
