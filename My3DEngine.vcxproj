@@ -147,9 +147,13 @@
   <ItemGroup>
     <ClCompile Include="Code\Application.cpp" />
     <ClCompile Include="Code\main.cpp" />
+    <ClCompile Include="Code\Vector3f.cpp" />
+    <ClCompile Include="Code\Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Code\Application.h" />
+    <ClInclude Include="Code\Vector3f.h" />
+    <ClInclude Include="Code\Triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
