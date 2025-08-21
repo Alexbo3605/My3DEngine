@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-
+#include <math.h>
 class Vector3f
 {
 private:
@@ -48,7 +48,11 @@ public:
 
     //векторний добуток
     Vector3f CrossProduct(const Vector3f& v1, const Vector3f& v2);
-   
+
+    float len();
+
+    //Нормалізація вектора (приведення його до одиничних координат)
+    void norm();
 
 };
 

@@ -90,3 +90,14 @@ Vector3f Vector3f::CrossProduct(const Vector3f& v1, const Vector3f& v2)
         v1.z * v2.x - v1.x * v2.z,
         v1.x * v2.y - v1.y * v2.x);
 }
+
+float Vector3f::len()
+{
+    return sqrt(x * x + y * y + z * z);
+}
+
+void Vector3f::norm()
+{
+    *this /= sqrt(x * x + y * y + z * z);
+
+}
