@@ -1,13 +1,15 @@
-#include <SFML/Graphics.hpp>
+//#include "SFMLWindowProwider.h"
 
-#include "Application.h"
+#include "Vector3f.h"
 
 int main()
 {
+    
+    Vector3f v(1, 1, 1, 1);
+    
+    int x= v.getX();
 
-    //мб отут передавати параметри екрану у конструкторы
-    Application app; 
-   
+    /*SFMLWindowProwider app;
 
-    return app.run();
+    app.runWindow();*/
 }

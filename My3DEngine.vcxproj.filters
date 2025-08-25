@@ -13,30 +13,69 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\WindowProwider%28CPP%29">
+      <UniqueIdentifier>{aef41929-ac2d-4843-ab27-8780f50744e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\WindowProwider%28H%29">
+      <UniqueIdentifier>{33c5b534-6e5f-4b6a-a7ca-fa712059bc58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\MathObjects%28CPP%29">
+      <UniqueIdentifier>{58d83011-4ca5-4c34-b4e1-5ef69fe9635d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\MathObjects%28H%29">
+      <UniqueIdentifier>{e55f2924-0cfc-456f-a221-23fd8689b283}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Code\main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Code\Application.cpp">
+    <ClCompile Include="RenderingPipeline.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Code\Vector3f.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="Code\GLFWWindowProwider.cpp">
+      <Filter>Исходные файлы\WindowProwider%28CPP%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\SFMLWindowProwider.cpp">
+      <Filter>Исходные файлы\WindowProwider%28CPP%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\IWindowProwider.cpp">
+      <Filter>Исходные файлы\WindowProwider%28CPP%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Matrix4x4.cpp">
+      <Filter>Исходные файлы\MathObjects%28CPP%29</Filter>
     </ClCompile>
     <ClCompile Include="Code\Triangle.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\MathObjects%28CPP%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Vector3f.cpp">
+      <Filter>Исходные файлы\MathObjects%28CPP%29</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Code\Application.h">
+    <ClInclude Include="RenderingPipeline.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Vector3f.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="Code\GLFWWindowProwider.h">
+      <Filter>Файлы заголовков\WindowProwider%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\IWindowProwider.h">
+      <Filter>Файлы заголовков\WindowProwider%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\SFMLWindowProwider.h">
+      <Filter>Файлы заголовков\WindowProwider%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\WindowSettings.h">
+      <Filter>Файлы заголовков\WindowProwider%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Matrix4x4.h">
+      <Filter>Файлы заголовков\MathObjects%28H%29</Filter>
     </ClInclude>
     <ClInclude Include="Code\Triangle.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\MathObjects%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Vector3f.h">
+      <Filter>Файлы заголовков\MathObjects%28H%29</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

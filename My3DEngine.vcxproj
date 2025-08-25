@@ -145,15 +145,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Code\Application.cpp" />
     <ClCompile Include="Code\main.cpp" />
-    <ClCompile Include="Code\Vector3f.cpp" />
     <ClCompile Include="Code\Triangle.cpp" />
+    <ClCompile Include="Code\Matrix4x4.cpp" />
+    <ClCompile Include="Code\GLFWWindowProwider.cpp" />
+    <ClCompile Include="Code\IWindowProwider.cpp" />
+    <ClCompile Include="RenderingPipeline.cpp" />
+    <ClCompile Include="Code\SFMLWindowProwider.cpp" />
+    <ClCompile Include="Code\Vector3f.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Code\Application.h" />
-    <ClInclude Include="Code\Vector3f.h" />
     <ClInclude Include="Code\Triangle.h" />
+    <ClInclude Include="Code\Matrix4x4.h" />
+    <ClInclude Include="Code\GLFWWindowProwider.h" />
+    <ClInclude Include="Code\IWindowProwider.h" />
+    <ClInclude Include="RenderingPipeline.h" />
+    <ClInclude Include="Code\SFMLWindowProwider.h" />
+    <ClInclude Include="Code\WindowSettings.h" />
+    <ClInclude Include="Code\Vector3f.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
