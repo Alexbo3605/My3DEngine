@@ -150,19 +150,27 @@
     <ClCompile Include="Code\Matrix4x4.cpp" />
     <ClCompile Include="Code\GLFWWindowProwider.cpp" />
     <ClCompile Include="Code\IWindowProwider.cpp" />
-    <ClCompile Include="RenderingPipeline.cpp" />
+    <ClCompile Include="Code\Mesh.cpp" />
+    <ClCompile Include="Code\RenderingPipeline.cpp" />
     <ClCompile Include="Code\SFMLWindowProwider.cpp" />
     <ClCompile Include="Code\Vector3f.cpp" />
+    <ClCompile Include="Code\Scene.cpp" />
+    <ClCompile Include="Code\SceneLight.cpp" />
+    <ClCompile Include="Code\Object3D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Code\Triangle.h" />
     <ClInclude Include="Code\Matrix4x4.h" />
     <ClInclude Include="Code\GLFWWindowProwider.h" />
     <ClInclude Include="Code\IWindowProwider.h" />
-    <ClInclude Include="RenderingPipeline.h" />
+    <ClInclude Include="Code\Mesh.h" />
+    <ClInclude Include="Code\RenderingPipeline.h" />
     <ClInclude Include="Code\SFMLWindowProwider.h" />
     <ClInclude Include="Code\WindowSettings.h" />
     <ClInclude Include="Code\Vector3f.h" />
+    <ClInclude Include="Code\Scene.h" />
+    <ClInclude Include="Code\SceneLight.h" />
+    <ClInclude Include="Code\Object3D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -25,12 +25,18 @@
     <Filter Include="Файлы заголовков\MathObjects%28H%29">
       <UniqueIdentifier>{e55f2924-0cfc-456f-a221-23fd8689b283}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\ModelParts%28CPP%29">
+      <UniqueIdentifier>{a4a04af7-1677-4581-8bf8-c1e263f11576}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\ModelParts%28H%29">
+      <UniqueIdentifier>{d2a37593-ca87-4b5f-9def-a155f07bdf1c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Code\main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="RenderingPipeline.cpp">
+    <ClCompile Include="Code\RenderingPipeline.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Code\GLFWWindowProwider.cpp">
@@ -51,9 +57,21 @@
     <ClCompile Include="Code\Vector3f.cpp">
       <Filter>Исходные файлы\MathObjects%28CPP%29</Filter>
     </ClCompile>
+    <ClCompile Include="Code\Mesh.cpp">
+      <Filter>Исходные файлы\ModelParts%28CPP%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Scene.cpp">
+      <Filter>Исходные файлы\ModelParts%28CPP%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\SceneLight.cpp">
+      <Filter>Исходные файлы\ModelParts%28CPP%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Object3D.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RenderingPipeline.h">
+    <ClInclude Include="Code\RenderingPipeline.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Code\GLFWWindowProwider.h">
@@ -76,6 +94,18 @@
     </ClInclude>
     <ClInclude Include="Code\Vector3f.h">
       <Filter>Файлы заголовков\MathObjects%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Mesh.h">
+      <Filter>Файлы заголовков\ModelParts%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Scene.h">
+      <Filter>Файлы заголовков\ModelParts%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\SceneLight.h">
+      <Filter>Файлы заголовков\ModelParts%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Object3D.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

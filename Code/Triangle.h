@@ -6,15 +6,17 @@
 class Triangle
 {
 private:
-    std::vector<std::unique_ptr<Vector3f>> trianglePoints;
-    std::unique_ptr<Vector3f> normal;
+    std::vector<Vector3f> trianglePoints;
+    Vector3f normal;
 
 public:
     Triangle();
-    Triangle(std::vector<std::unique_ptr<Vector3f>>&& trianglePoints);
-    Triangle(std::unique_ptr<Vector3f>&& t1,
-        std::unique_ptr<Vector3f>&& t2,
-        std::unique_ptr<Vector3f>&& t3);
+    Triangle(std::vector<Vector3f> vertices);
+    /*Triangle(const std::vector<Vector3f>& vertices) Тоді без move */
+
+    Triangle(const Vector3f& v1, const Vector3f& v2, const Vector3f& v3);
+
+   
 
     virtual ~Triangle(void);
 
