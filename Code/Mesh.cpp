@@ -1,16 +1,32 @@
 #include "Mesh.h"
 
-bool Mesh::serialize()
+Mesh::Mesh(const std::vector<Triangle>& trianglesVector) : trianglesVector(trianglesVector)
+{}
+
+Mesh::Mesh(const int readWith)
+{
+    if (!this->serialize(readWith)) {
+        //ok
+    
+    }
+    else {
+        //error throw ReadError(id) ;
+    }
+
+
+}
+
+Mesh::~Mesh(void)
+{}
+
+
+
+bool Mesh::serialize(const int readWith)
 {
 
 
     return true;
 }
-
-//Mesh::Mesh() : trianglesVector(Triangle() ); короч пустий
-
-Mesh::Mesh(const std::vector<Triangle>& trianglesVector) : trianglesVector(trianglesVector)
-{}
 
 void Mesh::define_as_cube()
 {

@@ -4,18 +4,13 @@ Triangle::Triangle()
     : trianglePoints() {
 }
 
-Triangle::Triangle(std::vector<std::unique_ptr<Vector3f>>&& trianglePoints)
-    : trianglePoints(std::move(trianglePoints)) {
-}
+Triangle::Triangle(std::vector<Vector3f> vertices) : trianglePoints(std::move(vertices))
+{}
 
-Triangle::Triangle(std::unique_ptr<Vector3f>&& t1,
-    std::unique_ptr<Vector3f>&& t2,
-    std::unique_ptr<Vector3f>&& t3)
-    : trianglePoints{}
-{
-    trianglePoints.push_back(std::move(t1));
-    trianglePoints.push_back(std::move(t2));
-    trianglePoints.push_back(std::move(t3));
-}
+
+Triangle::Triangle(const Vector3f& v1, const Vector3f& v2, const Vector3f& v3) : trianglePoints( {v1,v2,v3} ) 
+{}
+
+
 
 Triangle::~Triangle(void) {}
