@@ -1,19 +1,12 @@
 #include "Matrix4x4.h"
 
 
-
-
-
-
 Matrix4x4::Matrix4x4(): cords(4, std::vector<float>(4, 0.0f))
 {
 }
 
 Matrix4x4::Matrix4x4(const Vector4x4& v) : cords(v)
 {
-
-    /*this->cords = v;*/
-   
 }
 
 Matrix4x4::Matrix4x4(Vector4x4&& v) noexcept : cords(std::move(v)) {}
@@ -43,10 +36,10 @@ Matrix4x4 Matrix4x4::getRotationX(const float angle)
     return Matrix4x4(
         std::vector<std::vector<float>>
     {
-        { 1,      0,         0,       0 },
-        { 0, cos(angle), -sin(angle), 0 },
-        { 0, sin(angle), cos(angle),  0 },
-        { 0,      0,         0,       1 }
+        { 1,       0,          0,       0 },
+        { 0, cosf(angle), -sinf(angle), 0 },
+        { 0, sinf(angle), cosf(angle),  0 },
+        { 0,       0,          0,       1 }
 
     }
     );
@@ -58,10 +51,10 @@ Matrix4x4 Matrix4x4::getRotationY(const float angle)
     return Matrix4x4(
         std::vector<std::vector<float>>
     {
-        { cos(angle),  0, sin(angle),    0 },
-        { 0,           1,      0,        0 },
-        { -sin(angle), 0, cos(angle),    0 },
-        { 0,           0,      0,        1 }
+        { cosf(angle),  0, sinf(angle),    0 },
+        { 0,            1,       0,        0 },
+        { -sinf(angle), 0, cosf(angle),    0 },
+        { 0,            0,       0,        1 }
 
     }
     );
@@ -73,10 +66,10 @@ Matrix4x4 Matrix4x4::getRotationZ(const float angle)
     return Matrix4x4(
         std::vector<std::vector<float>>
     {
-        { cos(angle), -sin(angle), 0, 0 },
-        { sin(angle), cos(angle),  0, 0 },
-        { 0,         0,      1,       0 },
-        { 0,         0,      0,       1 }
+        { cosf(angle), -sinf(angle), 0, 0 },
+        { sinf(angle), cosf(angle),  0, 0 },
+        { 0,          0,       1,       0 },
+        { 0,          0,       0,       1 }
 
     }
     );
