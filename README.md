@@ -59,14 +59,20 @@ This is needed for future matrix multiplication (and you can only multiply matri
 We will use orthographic: <br><br>
 
 
+<img width="340" height="271" alt="image" src="https://github.com/user-attachments/assets/a86bb739-0edc-4767-b51d-f40a3b9f3ad4" />
 
-<img width="370" height="152" alt="image" src="https://github.com/user-attachments/assets/9f6eef52-563e-4bcc-a513-0a28cac4dd3e" />
-<br><br>
-n ==> The distance to the near plane.<br><br>
-f ==> The distance to the far plane.<br><br>
-r ==> The distance to the right side of the clipping plane.<br><br>
-t ==> The distance to the top side of the clipping plane.<br><br>
+<br>
+w ==> The distance to the right side of the clipping plane.<br><br>
+h ==> The distance to the top side of the clipping plane.<br><br>
+zNear ==> The distance to the near plane.<br><br>
+zFar ==> The distance to the far plane.<br><br>
+FOV ==> Field of view<br><br>
+
 (may vary depending on the task and implementation)<br><br><br>
+
+<img width="803" height="119" alt="image" src="https://github.com/user-attachments/assets/70dca9d8-33ec-411b-bce4-991ba5604740" />
+(implementation in code)
+
 
 <hr>
 3) The model's coordinate vector is multiplied by the projection matrix. 
@@ -86,6 +92,8 @@ This final step gives you the 2D coordinates in pixels, ready to be displayed on
 
 (Depending on the task at hand, there may be more steps here)
 ​<hr>
- 
 
+The rotation matrices about the x, y, and z axes, respectively:
+<img width="884" height="95" alt="image" src="https://github.com/user-attachments/assets/373c63ea-ee2e-427d-bdc1-43aa1fdf4c3e" />
+(wiki)
 
