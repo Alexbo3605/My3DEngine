@@ -16,13 +16,14 @@ public:
 	
 	virtual ~Matrix4x4();
 	
+	
+
 
 	// Оператори присвоєння (копіювання та переміщення)
 	Matrix4x4& operator=(const Matrix4x4& other);
 	Matrix4x4& operator=(Matrix4x4&& other) noexcept;
 
 
-	//оце крашить мало розумію чому
 	friend Vector3f operator * (const Vector3f& v1, const Matrix4x4& m1);
 
 

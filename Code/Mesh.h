@@ -11,9 +11,8 @@ class Mesh
 {
 public:
 
-	Mesh(); // call ==> define_as_cube();
 	Mesh(const std::vector<Triangle>& trianglesVector);
-	Mesh(const int readWith = 1);
+	Mesh(const int readWith = 1); //call ==> define_as_cube();
 	~Mesh(void);
 
 	
