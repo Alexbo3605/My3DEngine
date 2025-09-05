@@ -18,7 +18,7 @@ public:
 
    
 
-    virtual ~Triangle(void);
+    ~Triangle(void);
 
     // TODO: реалізувати кліпінг
 };

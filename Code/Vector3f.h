@@ -7,7 +7,7 @@ public:
 	// ===== Конструктори =====
 	Vector3f(float xx = 0.0f, float yy = 0.0f, float zz = 0.0f, float ww = 1.0f);
 
-	virtual ~Vector3f(void);
+	~Vector3f(void);
 
 
     float getX() const;
