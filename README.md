@@ -94,6 +94,6 @@ This final step gives you the 2D coordinates in pixels, ready to be displayed on
 ​<hr>
 
 The rotation matrices about the x, y, and z axes, respectively:
-<img width="884" height="95" alt="image" src="https://github.com/user-attachments/assets/373c63ea-ee2e-427d-bdc1-43aa1fdf4c3e" />
-(wiki)
+<img width="662" height="108" alt="image" src="https://github.com/user-attachments/assets/18995985-fd47-4a57-8a28-dd588f0ad5b6" />
+
 
