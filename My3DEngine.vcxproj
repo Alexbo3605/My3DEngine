@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClCompile Include="Code\Application.cpp" />
     <ClCompile Include="Code\main.cpp" />
+    <ClCompile Include="Code\ObjectSpace.cpp" />
     <ClCompile Include="Code\Triangle.cpp" />
     <ClCompile Include="Code\Matrix4x4.cpp" />
     <ClCompile Include="Code\GLFWWindowProwider.cpp" />
@@ -161,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Code\Application.h" />
+    <ClInclude Include="Code\ObjectSpace.h" />
     <ClInclude Include="Code\Triangle.h" />
     <ClInclude Include="Code\Matrix4x4.h" />
     <ClInclude Include="Code\GLFWWindowProwider.h" />

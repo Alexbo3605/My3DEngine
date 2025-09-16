@@ -1,4 +1,5 @@
 #include "SFMLWindowProwider.h"
+#include "Scene.h"
 
 //                   //
 //    ÊÎÍÑÒÐÓÊÒÎÐÈ   //
@@ -92,6 +93,8 @@ void SFMLWindowProwider::renderAll()
 {
 	//this->window->draw(*aaaaa);
 }
+
+
 
 
 

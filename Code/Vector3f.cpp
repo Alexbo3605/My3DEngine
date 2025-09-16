@@ -7,24 +7,6 @@ Vector3f::Vector3f(float xx, float yy, float zz, float ww)
 
 Vector3f::~Vector3f(void) {}
 
-float Vector3f::getX() const { return this->x; }
-
-float Vector3f::getY() const { return this->y; }
-
-float Vector3f::getZ() const { return this->z; }
-
-float Vector3f::getW() const { return this->w; }
-
-
-
-void Vector3f::setX(float xx) { this->x = xx; }
-
-void Vector3f::setY(float yy) { this->y = yy; }
-
-void Vector3f::setZ(float zz) { this->z = zz; }
-
-void Vector3f::setW(float ww) { this->w = ww; }
-
 
 
 void Vector3f::operator+=(const Vector3f& v){

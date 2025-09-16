@@ -10,10 +10,6 @@ public:
 	~Vector3f(void);
 
 
-    float getX() const;
-    float getY() const;
-    float getZ() const;
-    float getW() const;
 
     /*Погуглити чому так не можна вибиває помилку лінковки*/
     //inline float getX() const;
@@ -21,12 +17,6 @@ public:
     //inline float getZ() const;
     //inline float getW() const;
 
-
-    // Сеттери (setters)
-    void setX(float xx);
-    void setY(float yy);
-    void setZ(float zz);
-    void setW(float ww);
 
 
 
@@ -65,7 +55,7 @@ public:
 
 
 
-
+    float x, y, z, w;
 private:
-	float x, y, z, w;
+	
 };
