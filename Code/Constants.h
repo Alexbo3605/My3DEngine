@@ -13,31 +13,34 @@
 
 #pragma once
 
-#include <array>
-
  /**
   * Description:
-  * EN: Specific configuration settings for the window provider and rendering context.
+  * Global engine configuration constants.
   */
-namespace WindowSettings {
+namespace constants {
 
     // ==========================================
-    // Dimensions & Title
+    // Math
     // ==========================================
-    constexpr int kWindowWidth = 1536;
-    constexpr int kWindowHeight = 864;
-    constexpr const char* kWindowName = "My3DEngine";
+    constexpr float kPi = 3.1415926535f;
 
     // ==========================================
-    // Rendering Options
+    // Screen / Window
     // ==========================================
-    constexpr int kFpsLimit = 100000;
-    constexpr int kAntialiasingLevel = 5;
+    constexpr int kWidth = 1920;
+    constexpr int kHeight = 1080;
 
     // ==========================================
-    // Global Colors
+    // Camera & Projection
     // ==========================================
-    // EN: Default color definition (R, G, B, A).
-    constexpr float kDefaultColor[4] = { 255.0f, 255.0f, 255.0f, 255.0f };
+    constexpr float kZNear = 0.1f;
+    constexpr float kZFar = 1000.0f;
+    constexpr float kFov = 90.0f;
+
+    // ==========================================
+    // Input / Controls
+    // ==========================================
+    constexpr float kMouseSensitivity = 0.007f;
+    constexpr float kZoomSpeed = 0.2f;
 
 }

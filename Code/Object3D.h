@@ -1,31 +1,107 @@
+/**
+ * MIT License
+ * Copyright (c) 2026 [AlexBo/My3DEngine]
+ * * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ */
+
 #pragma once
+
+#include <memory>
+
 #include "Mesh.h"
-// це екземпляр об'єкта в сцені. Це "конкретний" об'єкт,
-// який має своє унікальне положення, поворот і масштаб.
+#include "Matrix4x4.h"
 
-// він і буде відображатися на екрані
-
-
-
-class Object3D
+ /**
+  * Description:
+  * EN: Represents surface properties of an object
+  */
+struct Material
 {
-public:
-	Object3D(const int fileType = 1, const int materialType = 1); //змінити на енум
-	~Object3D(void);
-
-	//містить
-	// Посилання на Mesh: Він "вказує" на конкретну сітку, яку потрібно відобразити.
-
-	//Трансформації (Transformations): Позиція (Position) Поворот (Rotation) Масштаб (Scale)
-
-	// Посилання на Material опціонно (покищо заглушка)
-private:
-	Mesh* pMash;  //мб створюваи у stack замість heap буде швидше але переповнення може бути
-
-	//Meterial* pMaterial;
-	//Light* pLight;
-
-
-
+    // RGB color [0.0, 1.0]. Default: Light Gray.
+    Vector3f diffuseColor{ 0.8f, 0.8f, 0.8f };
 };
 
+/**
+ * Description:
+ * EN: Represents an entity in 3D space, containing its spatial transform, material, and geometry (Mesh)
+ */
+class Object3D final
+{
+public:
+    Object3D();
+
+    /**
+     * Description:
+     * EN: Initializes the object with a generated or loaded mesh.
+     * UA: Ініціалізує об'єкт зі згенерованою або завантаженою сіткою.
+     */
+    Object3D(const std::string& fileName, int meshType, int materialType);
+    ~Object3D() = default;
+
+    // Rule of 5: Move semantics explicitly allowed, copying strictly forbidden.
+    Object3D(Object3D&&) noexcept = default;
+    Object3D& operator=(Object3D&&) noexcept = default;
+    Object3D(const Object3D&) = delete;
+    Object3D& operator=(const Object3D&) = delete;
+
+    [[nodiscard]] bool isEmpty() const;
+
+    // ==========================================
+    // Setters (Absolute Transform)
+    // ==========================================
+    void setPosition(float x, float y, float z);
+    void setRotation(float x, float y, float z);
+    void setScale(float x, float y, float z);
+
+    void setPosition(const Vector3f& pos);
+    void setRotation(const Vector3f& rot);
+    void setScale(const Vector3f& scale);
+
+    // ==========================================
+    // Modifiers (Relative Transform)
+    // ==========================================
+    void move(const Vector3f& delta);
+    void rotate(const Vector3f& delta);
+    void scale(const Vector3f& factor); // Multiplicative scaling
+
+    // ==========================================
+    // Components
+    // ==========================================
+    [[nodiscard]] const Material& getMaterial() const { return m_material; }
+    void setMaterial(const Material& mat) { m_material = mat; }
+
+    void setMesh(std::unique_ptr<Mesh> mesh);
+    [[nodiscard]] Mesh& getMesh() const;
+
+    // ==========================================
+    // Rendering Matrices
+    // ==========================================
+    [[nodiscard]] Matrix4x4 getModelMatrix() const;
+
+    /**
+     * Description:
+     * EN: Computes the normal matrix (Inverse Transpose of the upper 3x3 model matrix).
+     * UA: Обчислює матрицю нормалей (Обернена транспонована верхня 3x3 матриця моделі).
+     */
+    [[nodiscard]] Matrix4x4 getNormalMatrix(const Matrix4x4& model) const;
+
+private:
+    [[nodiscard]] Matrix4x4 getTransformMatrix() const;
+    [[nodiscard]] Matrix4x4 getRotationMatrix() const;
+    [[nodiscard]] Matrix4x4 getScaleMatrix() const;
+
+private:
+    Vector3f m_position;
+    Vector3f m_rotation;
+    Vector3f m_scale;
+
+    Material m_material;
+    std::unique_ptr<Mesh> m_mesh;
+};

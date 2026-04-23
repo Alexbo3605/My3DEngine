@@ -31,30 +31,42 @@
     <Filter Include="Файлы заголовков\ModelParts%28H%29">
       <UniqueIdentifier>{d2a37593-ca87-4b5f-9def-a155f07bdf1c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Logic%28CPP%29">
+      <UniqueIdentifier>{52c399bf-470b-4096-aae5-57bd87c2608c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Logic%28H%29">
+      <UniqueIdentifier>{61c38276-d8ee-4ec6-9052-573e7a268e52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Command%28H%29">
+      <UniqueIdentifier>{7a830399-1473-4f6c-9bd5-7888b177c951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Command%28CPP%29">
+      <UniqueIdentifier>{1032aeed-fdea-44e2-9691-3e98dcf24b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Serialization%28H%29">
+      <UniqueIdentifier>{49ac9c51-5faf-4c84-a7b6-14e7adf93bc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization%28CPP%29">
+      <UniqueIdentifier>{446047f0-f944-4670-b520-3dc1785cea1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Deserialization%28CPP%29">
+      <UniqueIdentifier>{d7d1b787-822e-4b7a-a0fb-b6937198cf87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Deserialization%28H%29">
+      <UniqueIdentifier>{8f50ebc3-975d-4c03-bfd1-71c2ef217fd1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Code\main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Code\RenderingPipeline.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\GLFWWindowProwider.cpp">
+    <ClCompile Include="Code\GLFWWindowProvider.cpp">
       <Filter>Исходные файлы\WindowProwider%28CPP%29</Filter>
     </ClCompile>
-    <ClCompile Include="Code\SFMLWindowProwider.cpp">
-      <Filter>Исходные файлы\WindowProwider%28CPP%29</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\IWindowProwider.cpp">
+    <ClCompile Include="Code\SFMLWindowProvider.cpp">
       <Filter>Исходные файлы\WindowProwider%28CPP%29</Filter>
     </ClCompile>
     <ClCompile Include="Code\Matrix4x4.cpp">
-      <Filter>Исходные файлы\MathObjects%28CPP%29</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Triangle.cpp">
-      <Filter>Исходные файлы\MathObjects%28CPP%29</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Vector3f.cpp">
       <Filter>Исходные файлы\MathObjects%28CPP%29</Filter>
     </ClCompile>
     <ClCompile Include="Code\Mesh.cpp">
@@ -63,27 +75,33 @@
     <ClCompile Include="Code\Scene.cpp">
       <Filter>Исходные файлы\ModelParts%28CPP%29</Filter>
     </ClCompile>
-    <ClCompile Include="Code\SceneLight.cpp">
+    <ClCompile Include="Code\Application.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Camera.cpp">
       <Filter>Исходные файлы\ModelParts%28CPP%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\RenderingPipeline.cpp">
+      <Filter>Исходные файлы\Logic%28CPP%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\InputHandler.cpp">
+      <Filter>Исходные файлы\Command%28CPP%29</Filter>
     </ClCompile>
     <ClCompile Include="Code\Object3D.cpp">
       <Filter>Исходные файлы\ModelParts%28CPP%29</Filter>
     </ClCompile>
-    <ClCompile Include="Code\Application.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="Code\ObjLoader.cpp">
+      <Filter>Исходные файлы\Deserialization%28CPP%29</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Code\RenderingPipeline.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\GLFWWindowProwider.h">
+    <ClInclude Include="Code\GLFWWindowProvider.h">
       <Filter>Файлы заголовков\WindowProwider%28H%29</Filter>
     </ClInclude>
-    <ClInclude Include="Code\IWindowProwider.h">
+    <ClInclude Include="Code\IWindowProvider.h">
       <Filter>Файлы заголовков\WindowProwider%28H%29</Filter>
     </ClInclude>
-    <ClInclude Include="Code\SFMLWindowProwider.h">
+    <ClInclude Include="Code\SFMLWindowProvider.h">
       <Filter>Файлы заголовков\WindowProwider%28H%29</Filter>
     </ClInclude>
     <ClInclude Include="Code\WindowSettings.h">
@@ -92,26 +110,61 @@
     <ClInclude Include="Code\Matrix4x4.h">
       <Filter>Файлы заголовков\MathObjects%28H%29</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Triangle.h">
-      <Filter>Файлы заголовков\MathObjects%28H%29</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Vector3f.h">
-      <Filter>Файлы заголовков\MathObjects%28H%29</Filter>
-    </ClInclude>
     <ClInclude Include="Code\Mesh.h">
       <Filter>Файлы заголовков\ModelParts%28H%29</Filter>
     </ClInclude>
     <ClInclude Include="Code\Scene.h">
       <Filter>Файлы заголовков\ModelParts%28H%29</Filter>
     </ClInclude>
-    <ClInclude Include="Code\SceneLight.h">
+    <ClInclude Include="Code\Application.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Constants.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Camera.h">
       <Filter>Файлы заголовков\ModelParts%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\RenderingPipeline.h">
+      <Filter>Файлы заголовков\Logic%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\ICommand.h">
+      <Filter>Файлы заголовков\Command%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Commands.h">
+      <Filter>Файлы заголовков\Command%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\EngineInput.h">
+      <Filter>Файлы заголовков\Command%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\InputHandler.h">
+      <Filter>Файлы заголовков\Command%28H%29</Filter>
     </ClInclude>
     <ClInclude Include="Code\Object3D.h">
       <Filter>Файлы заголовков\ModelParts%28H%29</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Application.h">
+    <ClInclude Include="Code\TVector.h">
+      <Filter>Файлы заголовков\MathObjects%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\IMeshLoader.h">
+      <Filter>Файлы заголовков\Deserialization%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\IMeshExporter.h">
+      <Filter>Файлы заголовков\Serialization%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\ObjLoader.h">
+      <Filter>Файлы заголовков\Deserialization%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\RenderTypes.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="My3DEngine.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
