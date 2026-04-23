@@ -79,12 +79,12 @@
     <IntDir>.\Binaries\Temp</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>.\Binaries</OutDir>
-    <IntDir>.\Binaries\Temp</IntDir>
+    <OutDir>.\Binaries\</OutDir>
+    <IntDir>.\Binaries\Temp\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>.\Binaries</OutDir>
-    <IntDir>.\Binaries\Temp</IntDir>
+    <OutDir>.\Binaries\</OutDir>
+    <IntDir>.\Binaries\Temp\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -118,12 +118,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)My3DEngine\vcpkg_installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)My3DEngine\vcpkg_installed\x64-windows\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)My3DEngine\vcpkg_installed\x64-windows\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)My3DEngine\vcpkg_installed\x64-windows\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -135,17 +135,56 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)My3DEngine\vcpkg_installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)My3DEngine\vcpkg_installed\x64-windows\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)My3DEngine\vcpkg_installed\x64-windows\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)My3DEngine\vcpkg_installed\x64-windows\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Code\Camera.cpp" />
+    <ClCompile Include="Code\Application.cpp" />
     <ClCompile Include="Code\main.cpp" />
+    <ClCompile Include="Code\Matrix4x4.cpp" />
+    <ClCompile Include="Code\GLFWWindowProvider.cpp" />
+    <ClCompile Include="Code\Mesh.cpp" />
+    <ClCompile Include="Code\RenderingPipeline.cpp" />
+    <ClCompile Include="Code\SFMLWindowProvider.cpp" />
+    <ClCompile Include="Code\Scene.cpp" />
+    <ClCompile Include="Code\InputHandler.cpp" />
+    <ClCompile Include="Code\Object3D.cpp" />
+    <ClCompile Include="Code\ObjLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Camera.h" />
+    <ClInclude Include="Code\Application.h" />
+    <ClInclude Include="Code\Matrix4x4.h" />
+    <ClInclude Include="Code\GLFWWindowProvider.h" />
+    <ClInclude Include="Code\IWindowProvider.h" />
+    <ClInclude Include="Code\Mesh.h" />
+    <ClInclude Include="Code\RenderingPipeline.h" />
+    <ClInclude Include="Code\RenderTypes.h" />
+    <ClInclude Include="Code\SFMLWindowProvider.h" />
+    <ClInclude Include="Code\WindowSettings.h" />
+    <ClInclude Include="Code\Scene.h" />
+    <ClInclude Include="Code\Constants.h" />
+    <ClInclude Include="Code\Commands.h" />
+    <ClInclude Include="Code\ICommand.h" />
+    <ClInclude Include="Code\EngineInput.h" />
+    <ClInclude Include="Code\InputHandler.h" />
+    <ClInclude Include="Code\Object3D.h" />
+    <ClInclude Include="Code\IMeshExporter.h" />
+    <ClInclude Include="Code\IMeshLoader.h" />
+    <ClInclude Include="Code\ObjLoader.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Code\TVector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="My3DEngine.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

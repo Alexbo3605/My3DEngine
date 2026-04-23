@@ -422,3 +422,4 @@ FodyWeavers.xsd
 build
 vcpkg_installed
 Binaries
+vcpkg.json
