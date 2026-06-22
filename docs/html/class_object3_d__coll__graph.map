@@ -1,0 +1,8 @@
+<map id="Object3D" name="Object3D">
+<area shape="rect" id="Node000001" title=" " alt="" coords="118,651,263,997"/>
+<area shape="rect" id="Node000002" href="$struct_vector3.html" title=" " alt="" coords="5,5,375,437"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,435,185,579,186,634,181,633,179,579,182,440"/>
+<area shape="rect" id="Node000003" href="$struct_material.html" title=" " alt="" coords="269,509,325,579"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="262,434,283,493,278,493,261,440"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="286,576,265,636,260,634,283,581"/>
+</map>

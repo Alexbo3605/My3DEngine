@@ -1,0 +1,7 @@
+<map id="Camera::updateCameraVectors" name="Camera::updateCameraVectors">
+<area shape="rect" id="Node000001" title=" " alt="" coords="275,31,479,57"/>
+<area shape="rect" id="Node000002" href="$class_camera.html#ac2d8b7c2b52ccc7895bc2c49a2a6e877" title=" " alt="" coords="55,5,177,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,33,177,27,177,22,262,32"/>
+<area shape="rect" id="Node000003" href="$class_camera.html#ac028c5a8dd6b3d3aed476eb30e8f2980" title=" " alt="" coords="5,56,227,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,56,228,61,227,56,262,55"/>
+</map>

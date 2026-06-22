@@ -1,0 +1,9 @@
+<map id="ObjLoader::parseNormal" name="ObjLoader::parseNormal">
+<area shape="rect" id="Node000001" title=" " alt="" coords="464,5,627,32"/>
+<area shape="rect" id="Node000002" href="$class_obj_loader.html#a7d01d506c694d98beaeda40aa0d8268b" title=" " alt="" coords="304,5,416,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="446,19,417,21,417,16,452,19"/>
+<area shape="rect" id="Node000003" href="$class_mesh.html#af9671edd2400ced26e8d2691e87bb822" title=" " alt="" coords="147,5,256,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,19,256,21,256,16,291,19"/>
+<area shape="rect" id="Node000004" href="$class_mesh.html#a585fb4d96f66dfe2f50e9f0973162fd7" title=" " alt="" coords="5,5,99,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="128,19,99,21,99,16,134,18"/>
+</map>

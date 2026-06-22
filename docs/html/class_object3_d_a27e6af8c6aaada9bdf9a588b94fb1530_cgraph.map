@@ -1,0 +1,15 @@
+<map id="Object3D::getNormalMatrix" name="Object3D::getNormalMatrix">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,186,83"/>
+<area shape="rect" id="Node000002" href="$class_object3_d.html#a2fbd77d057f84557cc0a38449b30252a" title=" " alt="" coords="234,56,421,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,67,221,69,216,70,186,72"/>
+<area shape="rect" id="Node000003" href="$class_matrix4x4.html#a491abb9ddb3925e5df2b332498be9746" title=" " alt="" coords="469,5,631,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,53,471,37,476,35,390,58"/>
+<area shape="rect" id="Node000005" href="$class_matrix4x4.html#a2762b936ce24c8de9b61e2fc026246a5" title=" " alt="" coords="469,56,631,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="421,67,456,69,450,70,422,72"/>
+<area shape="rect" id="Node000006" href="$class_matrix4x4.html#a0ff599e97fc38da77e6975e5509bae4e" title=" " alt="" coords="470,107,631,133"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="390,81,476,103,471,103,389,86"/>
+<area shape="rect" id="Node000004" href="$class_matrix4x4.html#a5062df9900847f9a161069a7d3156442" title=" " alt="" coords="679,56,823,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="606,30,683,52,678,52,606,35"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="631,67,667,69,661,69,632,72"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="606,103,678,87,683,87,607,109"/>
+</map>

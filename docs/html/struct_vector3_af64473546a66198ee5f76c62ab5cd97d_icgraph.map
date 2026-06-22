@@ -1,0 +1,17 @@
+<map id="Vector3::normalize" name="Vector3::normalize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="826,31,955,57"/>
+<area shape="rect" id="Node000002" href="$class_obj_loader.html#a8ce7c62748c31749adfdf413707392bb" title=" " alt="" coords="594,5,757,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="808,35,757,31,757,26,813,35"/>
+<area shape="rect" id="Node000006" href="$class_camera.html#ad424b8b92e580508caf21337b69b93fa" title=" " alt="" coords="573,56,778,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="813,53,778,60,778,55,808,54"/>
+<area shape="rect" id="Node000003" href="$class_obj_loader.html#a7d01d506c694d98beaeda40aa0d8268b" title=" " alt="" coords="358,5,471,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="576,19,471,21,471,16,581,18"/>
+<area shape="rect" id="Node000004" href="$class_mesh.html#af9671edd2400ced26e8d2691e87bb822" title=" " alt="" coords="147,5,256,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="340,19,257,21,256,16,345,18"/>
+<area shape="rect" id="Node000005" href="$class_mesh.html#a585fb4d96f66dfe2f50e9f0973162fd7" title=" " alt="" coords="5,5,99,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="129,20,100,21,98,16,133,17"/>
+<area shape="rect" id="Node000007" href="$class_camera.html#ac2d8b7c2b52ccc7895bc2c49a2a6e877" title=" " alt="" coords="354,56,475,83"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="555,70,476,72,476,67,560,69"/>
+<area shape="rect" id="Node000008" href="$class_camera.html#ac028c5a8dd6b3d3aed476eb30e8f2980" title=" " alt="" coords="304,107,525,133"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="591,86,487,109,487,103,586,86"/>
+</map>

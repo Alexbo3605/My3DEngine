@@ -1,0 +1,9 @@
+<map id="Vector4::Vector4" name="Vector4::Vector4">
+<area shape="rect" id="Node000001" title=" " alt="" coords="231,56,348,83"/>
+<area shape="rect" id="Node000002" href="$struct_vector4.html#a43c53de98bfddd8ac39becdaf1eebbb3" title=" " alt="" coords="7,5,181,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,53,148,35,148,30,223,50"/>
+<area shape="rect" id="Node000003" href="$struct_vector4.html#a106e7f3eaba9b994ff87627217e7e7b7" title=" " alt="" coords="5,56,183,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,70,183,72,183,67,218,69"/>
+<area shape="rect" id="Node000004" href="$struct_vector4.html#a007c800c892e792aa2ca60e97044a755" title=" " alt="" coords="7,107,181,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="223,87,149,109,148,103,218,88"/>
+</map>

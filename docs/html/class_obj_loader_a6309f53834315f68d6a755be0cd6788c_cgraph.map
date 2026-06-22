@@ -1,0 +1,9 @@
+<map id="ObjLoader::parseFace" name="ObjLoader::parseFace">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,155,83"/>
+<area shape="rect" id="Node000002" href="$class_mesh.html#acddc50e78999b22f853ea7be1d7bca2b" title=" " alt="" coords="214,5,342,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,53,211,35,206,38,136,58"/>
+<area shape="rect" id="Node000003" href="$class_mesh.html#aa08537937a76d2a3708a53f98a34d4f1" title=" " alt="" coords="205,56,352,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,67,192,69,186,70,156,72"/>
+<area shape="rect" id="Node000004" href="$class_mesh.html#a6c14df866b9d28ac272b40622b74c8e5" title=" " alt="" coords="203,107,354,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="136,81,211,101,206,103,135,86"/>
+</map>

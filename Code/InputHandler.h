@@ -38,15 +38,19 @@ public:
 
     /**
      * Description:
-     * EN: Processes raw input events and generates corresponding executable commands.
-     * UA: Обробляє сирі події вводу та генерує відповідні виконувані команди.
+     * EN: Processes raw input events and generates corresponding executable commands * deltaTime .
      *
      * Arguments:
-     * events      (I) - EN: Queue of engine-agnostic events  | UA: Черга незалежних від рушія подій
-     * outCommands (O) - EN: Buffer to store created commands | UA: Буфер для збереження створених команд
+     * events      (I) - EN: Queue of engine-agnostic events  
+     * deltaTime   (I)   deltaTime wich multiply on out value
+     * outCommands (O) - EN: Buffer to store created commands 
+     * 
      */
+ 
     static void handleInput(
         const std::vector<EngineEvent>& events,
+        float deltaTime,
         std::vector<std::unique_ptr<ICommand>>& outCommands
+        
     );
 };

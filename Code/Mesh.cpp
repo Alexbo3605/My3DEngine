@@ -86,9 +86,40 @@ bool Mesh::serialize(const std::string& fileName, int readWith)
 {
     ObjLoader loader;
     if (loader.load(fileName, *this)) {
+        recenter();
         return true;
     }
     return false;
+}
+
+void Mesh::recenter()
+{
+    if (m_positions.empty()) return;
+
+    // 1. Знаходимо габаритний контейнер (Bounding Box)
+    Vector3f minPos = m_positions[0];
+    Vector3f maxPos = m_positions[0];
+
+    for (const auto& pos : m_positions)
+    {
+        if (pos.x < minPos.x) minPos.x = pos.x;
+        if (pos.y < minPos.y) minPos.y = pos.y;
+        if (pos.z < minPos.z) minPos.z = pos.z;
+
+        if (pos.x > maxPos.x) maxPos.x = pos.x;
+        if (pos.y > maxPos.y) maxPos.y = pos.y;
+        if (pos.z > maxPos.z) maxPos.z = pos.z;
+    }
+
+    // 2. Обчислюємо точний центр
+    // Множення на 0.5f працює швидше, ніж ділення на 2
+    Vector3f center = (minPos + maxPos) * 0.5f;
+
+    // 3. Зміщуємо всі вершини так, щоб центр став точкою (0, 0, 0)
+    for (auto& pos : m_positions)
+    {
+        pos -= center;
+    }
 }
 
 void Mesh::define_as_cube()

@@ -15,6 +15,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <exception>
+#include <string>
 
  /**
   * Description:
@@ -23,11 +24,13 @@
   * Returns:
   * EN: EXIT_SUCCESS on normal termination, EXIT_FAILURE on crash/exception.
   */
-int main()
+int main (int argc, char* argv[])
 {
     try
     {
-        Application app;
+        std::string modelPath = (argc > 1) ? argv[1] : "Dog.obj";
+
+        Application app(modelPath);
         app.run();
     }
     catch (const std::exception& e)
