@@ -1,0 +1,7 @@
+<map id="MoveCameraCommand" name="MoveCameraCommand">
+<area shape="rect" id="Node000001" title=" " alt="" coords="103,509,273,600"/>
+<area shape="rect" id="Node000002" href="$class_i_command.html" title=" " alt="" coords="5,176,109,267"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,279,95,356,124,436,162,509,157,510,119,438,89,357,70,284"/>
+<area shape="rect" id="Node000003" href="$struct_vector3.html" title=" " alt="" coords="134,5,504,437"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,435,214,495,209,492,232,439"/>
+</map>

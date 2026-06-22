@@ -103,25 +103,24 @@ void SFMLWindowProvider::displayAll()
     m_window->display();
 }
 
-void SFMLWindowProvider::updateFPS(const std::string& baseTitle)
+void SFMLWindowProvider::updateFPS(const std::string& baseTitle, size_t renderedVerts, size_t totalVerts)
 {
     float dt = m_fpsClock.restart().asSeconds();
 
     if (dt > 0.0f)
     {
-        // EN: Static accumulator retains value across frame calls.
-        // UA: Статичний накопичувач зберігає значення між викликами кадрів.
         static float timeSinceLastUpdate = 0.0f;
         timeSinceLastUpdate += dt;
 
+        // Оновлюємо заголовок кожні 0.5 секунди, щоб текст не "мерехтів"
         if (timeSinceLastUpdate >= 0.5f)
         {
             int fps = static_cast<int>(1.0f / dt);
 
-            // EN: Zero-allocation string formatting via stack buffer.
-            // UA: Форматування рядка без алокації пам'яті через буфер на стеку.
-            char buffer[128];
-            snprintf(buffer, sizeof(buffer), "%s - FPS: %d", baseTitle.c_str(), fps);
+            // Збільшуємо буфер, щоб вмістити всі нові дані
+            char buffer[256];
+            snprintf(buffer, sizeof(buffer), "%s | FPS: %d | Verts: %zu / %zu",
+                baseTitle.c_str(), fps, renderedVerts, totalVerts);
 
             m_window->setTitle(buffer);
             timeSinceLastUpdate = 0.0f;

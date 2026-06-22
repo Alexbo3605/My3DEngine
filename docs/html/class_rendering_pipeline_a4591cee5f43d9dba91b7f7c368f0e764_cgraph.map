@@ -1,0 +1,7 @@
+<map id="RenderingPipeline::clipAndWritePolygon" name="RenderingPipeline::clipAndWritePolygon">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,147,48"/>
+<area shape="rect" id="Node000002" href="$struct_vector4.html#aa6fd27a1eccb53e3e5ff4ef60309eb3b" title=" " alt="" coords="195,13,338,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,24,182,26,177,27,147,29"/>
+<area shape="rect" id="Node000003" href="$struct_vector4.html#a18d99803e00efb1493aeac0e79351e95" title=" " alt="" coords="386,13,552,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,24,373,27,368,27,338,29"/>
+</map>

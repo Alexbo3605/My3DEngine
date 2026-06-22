@@ -1,0 +1,9 @@
+<map id="Vector2::Vector2" name="Vector2::Vector2">
+<area shape="rect" id="Node000001" title=" " alt="" coords="231,56,348,83"/>
+<area shape="rect" id="Node000002" href="$struct_vector2.html#aad6c956a0be1c86c570146cfe7fd763e" title=" " alt="" coords="7,5,181,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,53,148,35,148,30,223,50"/>
+<area shape="rect" id="Node000003" href="$struct_vector2.html#a04e2939663d9cbc8369e5f11cce9507f" title=" " alt="" coords="5,56,183,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,70,183,72,183,67,218,69"/>
+<area shape="rect" id="Node000004" href="$struct_vector2.html#ad81d7bd18a7e019d16285f8fb3d9dbb2" title=" " alt="" coords="7,107,181,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="223,87,149,109,148,103,218,88"/>
+</map>

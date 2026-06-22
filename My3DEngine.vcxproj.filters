@@ -60,12 +60,6 @@
     <ClCompile Include="Code\main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Code\GLFWWindowProvider.cpp">
-      <Filter>Исходные файлы\WindowProwider%28CPP%29</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\SFMLWindowProvider.cpp">
-      <Filter>Исходные файлы\WindowProwider%28CPP%29</Filter>
-    </ClCompile>
     <ClCompile Include="Code\Matrix4x4.cpp">
       <Filter>Исходные файлы\MathObjects%28CPP%29</Filter>
     </ClCompile>
@@ -93,14 +87,14 @@
     <ClCompile Include="Code\ObjLoader.cpp">
       <Filter>Исходные файлы\Deserialization%28CPP%29</Filter>
     </ClCompile>
+    <ClCompile Include="Code\SFMLWindowProvider.cpp">
+      <Filter>Исходные файлы\WindowProwider%28CPP%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\GLFWWindowProvider.cpp">
+      <Filter>Исходные файлы\WindowProwider%28CPP%29</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Code\GLFWWindowProvider.h">
-      <Filter>Файлы заголовков\WindowProwider%28H%29</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\IWindowProvider.h">
-      <Filter>Файлы заголовков\WindowProwider%28H%29</Filter>
-    </ClInclude>
     <ClInclude Include="Code\SFMLWindowProvider.h">
       <Filter>Файлы заголовков\WindowProwider%28H%29</Filter>
     </ClInclude>
@@ -160,6 +154,12 @@
     </ClInclude>
     <ClInclude Include="Code\RenderTypes.h">
       <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\GLFWWindowProvider.h">
+      <Filter>Файлы заголовков\WindowProwider%28H%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\IWindowProvider.h">
+      <Filter>Файлы заголовков\WindowProwider%28H%29</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

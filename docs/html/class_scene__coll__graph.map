@@ -1,0 +1,10 @@
+<map id="Scene" name="Scene">
+<area shape="rect" id="Node000001" title=" " alt="" coords="133,885,248,1104"/>
+<area shape="rect" id="Node000002" href="$class_camera.html" title=" " alt="" coords="15,595,193,813"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,810,156,869,150,869,135,816"/>
+<area shape="rect" id="Node000003" href="$struct_vector3.html" title=" " alt="" coords="5,5,375,437"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="152,434,129,579,124,578,151,440"/>
+<area shape="rect" id="Node000004" href="$struct_directional_light.html" title=" " alt="" coords="217,669,337,739"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="230,435,271,653,265,653,228,440"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="269,736,230,871,225,869,265,740"/>
+</map>

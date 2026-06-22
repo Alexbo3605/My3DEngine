@@ -1,0 +1,7 @@
+<map id="ICommand" name="ICommand">
+<area shape="rect" id="Node000001" title=" " alt="" coords="134,5,238,96"/>
+<area shape="rect" id="Node000002" href="$class_move_camera_command.html" title=" " alt="" coords="5,144,175,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,106,123,146,119,143,145,110"/>
+<area shape="rect" id="Node000003" href="$class_rotate_object_command.html" title=" " alt="" coords="199,144,368,235"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,106,255,145,250,144,226,111"/>
+</map>

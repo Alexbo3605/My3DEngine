@@ -15,6 +15,7 @@
 
 #include <memory>
 #include <vector>
+#include <string>
 
 #include "EngineInput.h"
 
@@ -32,7 +33,7 @@ class ICommand;
 class Application
 {
 public:
-    Application();
+    Application(std::string& modelPath);
 
     // Деструктор реалізовано в .cpp для підтримки std::unique_ptr з Forward Declarations
     ~Application();
@@ -50,7 +51,7 @@ private:
      * EN: Polls hardware events and dispatches them to the InputHandler.
      * UA: Збирає апаратні події та передає їх до InputHandler.
      */
-    void processInput();
+    void processInput(float deltaTime);
 
     /**
      * Description:
@@ -68,4 +69,7 @@ private:
 
     std::vector<EngineEvent> m_eventBuffer;
     std::vector<std::unique_ptr<ICommand>> m_commandBuffer;
+
+    size_t m_renderedVertices{ 0 };
+    size_t m_totalVertices{ 0 };
 };

@@ -15,10 +15,12 @@
 #include "EngineInput.h"   // Підтягує визначення EngineEvent та EngineKey
 #include "Constants.h"     // Підтягує налаштування чутливості (constants::kMouseSensitivity)
 
-void InputHandler::handleInput(const std::vector<EngineEvent>& events, std::vector<std::unique_ptr<ICommand>>& outCommands)
+void InputHandler::handleInput(const std::vector<EngineEvent>& events, float deltaTime, std::vector<std::unique_ptr<ICommand>>& outCommands)
 {
     // EN: Clear the buffer without deallocating capacity to prevent heap fragmentation.
     outCommands.clear();
+
+    const float moveSpeed = 10.0f * deltaTime;
 
     // TODO: У майбутньому сюди варто передавати DeltaTime і множити хардкод-значення (0.005f) на нього.
     for (const auto& ev : events)
@@ -26,32 +28,32 @@ void InputHandler::handleInput(const std::vector<EngineEvent>& events, std::vect
         switch (ev.type)
         {
         case EngineKey::W:
-            outCommands.push_back(std::make_unique<MoveCameraCommand>(0.0f, 0.0f, 0.005f));
+            outCommands.push_back(std::make_unique<MoveCameraCommand>(0.0f, 0.0f, moveSpeed));
             break;
 
         case EngineKey::S:
-            outCommands.push_back(std::make_unique<MoveCameraCommand>(0.0f, 0.0f, -0.005f));
+            outCommands.push_back(std::make_unique<MoveCameraCommand>(0.0f, 0.0f, -moveSpeed));
             break;
 
         case EngineKey::A:
-            outCommands.push_back(std::make_unique<MoveCameraCommand>(-0.005f, 0.0f, 0.0f));
+            outCommands.push_back(std::make_unique<MoveCameraCommand>(-moveSpeed, 0.0f, 0.0f));
             break;
 
         case EngineKey::D:
-            outCommands.push_back(std::make_unique<MoveCameraCommand>(0.005f, 0.0f, 0.0f));
+            outCommands.push_back(std::make_unique<MoveCameraCommand>(moveSpeed, 0.0f, 0.0f));
             break;
 
         case EngineKey::Space:
-            outCommands.push_back(std::make_unique<MoveCameraCommand>(0.0f, -0.005f, 0.0f));
+            outCommands.push_back(std::make_unique<MoveCameraCommand>(0.0f, -moveSpeed, 0.0f));
             break;
 
         case EngineKey::LShift:
-            outCommands.push_back(std::make_unique<MoveCameraCommand>(0.0f, 0.005f, 0.0f));
+            outCommands.push_back(std::make_unique<MoveCameraCommand>(0.0f, moveSpeed, 0.0f));
             break;
 
         case EngineKey::MouseDrag:
         {
-            // EN: Map pixel deltas to rotation angles using sensitivity constants.
+            // Рух миші (пікселі) НЕ залежить від часу кадру, тому тут deltaTime відсутній.
             float rotX = ev.deltaY * constants::kMouseSensitivity;
             float rotY = ev.deltaX * constants::kMouseSensitivity;
 
@@ -61,8 +63,8 @@ void InputHandler::handleInput(const std::vector<EngineEvent>& events, std::vect
 
         case EngineKey::MouseScroll:
         {
-            // EN: Map scroll wheel delta to Z-axis movement.
-            float moveZ = ev.deltaY * constants::kZoomSpeed;
+            // Скрол миші — це дискретні події (кліки колеса), тому deltaTime також не потрібен.
+            float moveZ = ev.deltaY * 2 * constants::kZoomSpeed;
 
             outCommands.push_back(std::make_unique<MoveCameraCommand>(0.0f, 0.0f, moveZ));
             break;

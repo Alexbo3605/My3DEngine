@@ -20,10 +20,11 @@
 #include "Scene.h" 
 #include "ICommand.h"
 
+#include <chrono>
 
-Application::Application()
+Application::Application(std::string& modelPath)
     : m_window(std::make_unique<SFMLWindowProvider>())
-    , m_scene(std::make_unique<Scene>("mercedes.obj", static_cast<int>(SceneLoadMode::CREATE_WITH_OBJ), 1))
+    , m_scene(std::make_unique<Scene>(modelPath, static_cast<int>(SceneLoadMode::CREATE_WITH_OBJ), 1))
     , m_pipeline(std::make_unique<RenderingPipeline>())
 {
     // EN: Pre-allocate memory to prevent heap fragmentation during the main loop.
@@ -32,7 +33,12 @@ Application::Application()
 
     if (auto* p_obj = m_scene->getObject3D()) {
         p_obj->setPosition(0.0f, 0.0f, -3.0f);
+
+        m_totalVertices = p_obj->getMesh().getIndices().size();
     }
+
+
+
 }
 
 // Дефолтна реалізація повинна бути тут, де компілятор бачить повні визначення класів для unique_ptr
@@ -40,17 +46,27 @@ Application::~Application() = default;
 
 void Application::run()
 {
+    auto lastTime = std::chrono::high_resolution_clock::now();
     while (m_window->isRunning())
     {
-        processInput();
+        // 1. Обчислення Delta Time
+        auto currentTime = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<float> elapsedTime = currentTime - lastTime;
+        lastTime = currentTime;
+
+        // Отримуємо час у секундах
+        float deltaTime = elapsedTime.count();
+
+        // 2. Обробка вводу (передаємо deltaTime, як ми зробили в попередньому кроці)
+        processInput(deltaTime);
         /* updateLogic(); */
         render();
 
-        m_window->updateFPS("My 3D Engine");
+        m_window->updateFPS("My 3D Engine", m_renderedVertices, m_totalVertices);
     }
 }
 
-void Application::processInput()
+void Application::processInput(float deltaTime)
 {
     m_eventBuffer.clear();
     m_commandBuffer.clear();
@@ -59,7 +75,7 @@ void Application::processInput()
 
     if (!m_eventBuffer.empty())
     {
-        InputHandler::handleInput(m_eventBuffer, m_commandBuffer);
+        InputHandler::handleInput(m_eventBuffer, deltaTime, m_commandBuffer);
 
         for (const auto& p_cmd : m_commandBuffer)
         {
@@ -74,6 +90,9 @@ void Application::render()
 
     // EN: Fetch strictly visible geometry from the pipeline.
     const auto& frameGeometry = m_pipeline->render(*m_scene);
+
+    // Зберігаємо кількість відрендерених вершин (після culling та clipping)
+    m_renderedVertices = frameGeometry.size();
 
     m_window->renderAll(frameGeometry);
     m_window->displayAll();

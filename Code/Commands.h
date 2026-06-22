@@ -32,27 +32,18 @@ public:
 
     void execute(Scene& scene) override
     {
-        try
-        {
-            auto* p_object = scene.getObject3D();
 
-            if (p_object != nullptr && !p_object->isEmpty())
-            {
-                p_object->move(m_velocity);
-            }
+        auto* p_object = scene.getObject3D();
 
-            // TODO: В майбутньому тут буде виклик методів камери (WASD)
-            // Camera* p_camera = scene.getCamera();
-            // p_camera->processKeyboard(...);
-        }
-        catch (const std::exception& e)
+        if (p_object != nullptr && !p_object->isEmpty())
         {
-            std::cerr << "[MoveCameraCommand Error]: " << e.what() << '\n';
+            p_object->move(m_velocity);
         }
-        catch (...)
-        {
-            std::cerr << "[MoveCameraCommand Error]: Unknown exception occurred.\n";
-        }
+
+        // TODO: В майбутньому тут буде виклик методів камери (WASD)
+        // Camera* p_camera = scene.getCamera();
+        // p_camera->processKeyboard(...);
+       
     }
 
 private:
@@ -74,23 +65,14 @@ public:
 
     void execute(Scene& scene) override
     {
-        try
-        {
-            auto* p_object = scene.getObject3D();
+  
+        auto* p_object = scene.getObject3D();
 
-            if (p_object != nullptr && !p_object->isEmpty())
-            {
-                p_object->rotate(m_rotation);
-            }
-        }
-        catch (const std::exception& e)
+        if (p_object != nullptr && !p_object->isEmpty())
         {
-            std::cerr << "[RotateObjectCommand Error]: " << e.what() << '\n';
+            p_object->rotate(m_rotation);
         }
-        catch (...)
-        {
-            std::cerr << "[RotateObjectCommand Error]: Unknown exception occurred.\n";
-        }
+        
     }
 
 private:

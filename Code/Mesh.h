@@ -89,6 +89,9 @@ public:
     bool serialize(const std::string& fileName, int readWith);
 
 private:
+
+    void recenter();
+
     /**
      * Description:
      * EN: Procedurally generates a 1x1x1 unit cube centered at origin.

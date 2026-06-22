@@ -73,7 +73,8 @@ public:
      * EN: Updates the window title with the current frames per second (FPS).
      * UA: Оновлює заголовок вікна з поточним значенням кадрів на секунду (FPS).
      */
-    void updateFPS(const std::string& baseTitle) override;
+    //void updateFPS(const std::string& baseTitle) override;
+    void updateFPS(const std::string& baseTitle, size_t renderedVerts, size_t totalVerts);
 
 private:
     /**

@@ -1,0 +1,13 @@
+<map id="Object3D::getRotationMatrix" name="Object3D::getRotationMatrix">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,193,83"/>
+<area shape="rect" id="Node000002" href="$class_matrix4x4.html#a491abb9ddb3925e5df2b332498be9746" title=" " alt="" coords="241,5,403,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,53,247,35,243,37,162,58"/>
+<area shape="rect" id="Node000004" href="$class_matrix4x4.html#a2762b936ce24c8de9b61e2fc026246a5" title=" " alt="" coords="241,56,403,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="193,67,227,69,222,70,193,72"/>
+<area shape="rect" id="Node000005" href="$class_matrix4x4.html#a0ff599e97fc38da77e6975e5509bae4e" title=" " alt="" coords="241,107,402,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="161,81,248,102,243,103,161,86"/>
+<area shape="rect" id="Node000003" href="$class_matrix4x4.html#a5062df9900847f9a161069a7d3156442" title=" " alt="" coords="451,56,594,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="378,30,455,51,449,52,378,35"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="403,67,438,69,433,70,403,72"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="377,103,449,87,455,87,378,109"/>
+</map>

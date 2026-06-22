@@ -84,7 +84,7 @@ public:
      * Arguments:
      * windowTitle (I) - EN: Base title of the window | UA: Базовий заголовок вікна
      */
-    virtual void updateFPS(const std::string& windowTitle) = 0;
+    virtual void updateFPS(const std::string& baseTitle, size_t renderedVerts, size_t totalVerts) = 0;
 
 protected:
     /**

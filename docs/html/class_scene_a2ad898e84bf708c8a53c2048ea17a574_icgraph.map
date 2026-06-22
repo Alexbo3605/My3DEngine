@@ -1,0 +1,9 @@
+<map id="Scene::getObject3D" name="Scene::getObject3D">
+<area shape="rect" id="Node000001" title=" " alt="" coords="221,80,360,107"/>
+<area shape="rect" id="Node000002" href="$class_move_camera_command.html#a9f0d717ded0a1176f3120dcc54800f7d" title=" " alt="" coords="5,5,173,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,76,156,51,156,46,235,73"/>
+<area shape="rect" id="Node000003" href="$class_rotate_object_command.html#a84eec1eb6aea8887b0a6116cb8afacd5" title=" " alt="" coords="10,72,168,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,94,169,96,168,91,208,93"/>
+<area shape="rect" id="Node000004" href="$class_rendering_pipeline.html#a91d87aa3230403bf7c94349bfad57f67" title=" " alt="" coords="22,139,156,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="236,111,157,141,155,136,230,113"/>
+</map>

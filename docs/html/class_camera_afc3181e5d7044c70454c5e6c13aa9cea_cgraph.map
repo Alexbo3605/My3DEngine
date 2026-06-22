@@ -1,0 +1,11 @@
+<map id="Camera::getViewMatrix" name="Camera::getViewMatrix">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,164,83"/>
+<area shape="rect" id="Node000002" href="$class_matrix4x4.html#adda1b48e3d0857c0aa3cb84759746b9f" title=" " alt="" coords="212,56,381,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,67,199,69,194,70,165,72"/>
+<area shape="rect" id="Node000003" href="$struct_vector3.html#ac4697b88093ec3e11a0122c997bc6a4f" title=" " alt="" coords="448,5,553,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,53,430,36,435,35,354,58"/>
+<area shape="rect" id="Node000004" href="$struct_vector3.html#a38ce3a31a6553d8235786d5882543c6d" title=" " alt="" coords="455,56,546,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="381,67,442,69,437,70,382,72"/>
+<area shape="rect" id="Node000005" href="$class_matrix4x4.html#a5062df9900847f9a161069a7d3156442" title=" " alt="" coords="429,107,572,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="354,81,432,102,427,102,353,86"/>
+</map>
